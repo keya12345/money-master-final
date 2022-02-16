@@ -1,4 +1,18 @@
-img {
-  height: 1000px;
+.image {
+  height: 600px;
   margin: 65px;
+  display: block;
+}
+.calculate {
+  display: block;
+  align-items: flex-end;
+  margin-left: 60px;
+  border: 2px solid gray;
+  background-color: rgba(0, 255, 255, 0.699);
+}
+.save {
+  align-items: center;
+  margin-left: 60px;
+  border: 2px solid gray;
+  background-color: rgba(0, 255, 255, 0.699);
 }
