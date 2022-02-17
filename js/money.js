@@ -1,12 +1,18 @@
 /* ***Function-1: get input imcome and expenses**** */
 function budgetMoney(moneyId) {
     const moneyInput= document.getElementById(moneyId)
-    const moneyNumber= parseFloat(moneyInput.value);
-    if(moneyNumber>0){
+
+    let moneyNumber= parseFloat(moneyInput.value);
+    if(moneyNumber>0  ){
+        return moneyNumber;
+    }
+    else if(moneyInput.value== " "){
+        let moneyNumber=0;
         return moneyNumber;
     }
     else{
-        alert('please input positive value')
+       const inputError=document.getElementById('input-error')
+       inputError.style.display='block'
     }
     
 }
@@ -39,13 +45,13 @@ const textShow=document.getElementById('error-msg')
 const incomeMoney=budgetMoney('income');
 /* ***error handler**** */
 const totalExpenses=expensesInput()
-if(totalExpenses<incomeMoney){
+if(totalExpenses<incomeMoney  ){
     balanceNumber.innerText=incomeMoney-parseFloat(totalExpenses)
     let balance =parseFloat(balanceNumber.innerText )
    
 return balance;
 }
-else{
+else {
     
     
     textShow.style.display='block'
