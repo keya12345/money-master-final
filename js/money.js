@@ -45,7 +45,7 @@ const textShow=document.getElementById('error-msg')
 const incomeMoney=budgetMoney('income');
 /* ***error handler**** */
 const totalExpenses=expensesInput()
-if(totalExpenses<incomeMoney  ){
+if(totalExpenses<=incomeMoney  ){
     balanceNumber.innerText=incomeMoney-parseFloat(totalExpenses)
     let balance =parseFloat(balanceNumber.innerText )
    
