@@ -1,3 +1,4 @@
+/* ***get input imcome and expenses**** */
 function budgetMoney(moneyId) {
     const moneyInput= document.getElementById(moneyId)
     const moneyNumber= parseFloat(moneyInput.value);
@@ -6,6 +7,8 @@ function budgetMoney(moneyId) {
     }
     
 }
+
+/* ***get total exprnses and balance id **** */
 function countBalance(balance) {
     const accountOfMoney = document.getElementById(balance);
     return accountOfMoney;
@@ -23,8 +26,18 @@ const totalCost = countBalance('total-expenses')
 
 totalCost.innerText = (foodCost+rentCost+clothesCost);
 const totalExpenses=parseFloat(totalCost.innerText);
-balance.innerText=incomeMoney-parseFloat(totalExpenses)
+const textShow=document.getElementById('error-msg')
 
+/* ***error handler**** */
+if(totalExpenses<incomeMoney){
+balance.innerText=incomeMoney-parseFloat(totalExpenses)
+}
+else{
+    
+    
+    textShow.style.display='block'
+    
+}
 
     
 })

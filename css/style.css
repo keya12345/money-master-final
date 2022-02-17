@@ -1,8 +1,11 @@
+/* ***img style**** */
 .image {
   height: 600px;
   margin: 65px;
   display: block;
 }
+
+/* ***calculate button style**** */
 .calculate {
   display: block;
   align-items: flex-end;
@@ -10,9 +13,17 @@
   border: 2px solid gray;
   background-color: rgba(0, 255, 255, 0.699);
 }
+
+/* ***save button style**** */
 .save {
   align-items: center;
   margin-left: 60px;
   border: 2px solid gray;
   background-color: rgba(0, 255, 255, 0.699);
+}
+
+/* ****error-side*** */
+.error-side {
+  display: none;
+  color: brown;
 }

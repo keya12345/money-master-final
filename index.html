@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money-Master</title>
+    <!-- ****add tailwindcss and css ilnk*** -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/dff1f70a2c.js" crossorigin="anonymous"></script>
@@ -26,6 +27,8 @@
 <span class="mr-4">Income:</span>
 <input id="income" class="border py-1 border-current rounded  w-1/2 mb-4 px-2" type="text" >
 <h1 class="text-2xl font-semibold text-center mb-4 w-3/4">Expenses</h1>
+
+<!-- ****Expenses Details*** -->
 <span class="mr-6">Food:</span>
 <input id="food-cost" class="border py-1 border-current rounded  w-1/2 mb-4 px-2" type="text" name="" id="">
 <br>
@@ -34,22 +37,30 @@
 <br>
 <span class="mr-2">Clothes:</span>
 <input id="clothes-cost" class="border border-current rounded  w-1/2 mb-4 px-2 py-1" type="text" name="" id="">
+
+<!-- ****Calculate Expenses and Balance*** -->
 <button id="calculate-button" class="calculate text-xl font-medium rounded px-2 py-1  w-1/4 mb-4">Calculate</button>
 <h1 class="mb-4 text-center text-xl font-medium w-2/4">Total Expenses: <span id="total-expenses"></span> </h1>
 <h1 class="mb-4 text-center text-xl font-medium w-2/4">Balance: <span id="balance"></span> </h1>
+
+<!-- ****error text*** -->
+<p id="error-msg" class="error-side text-2xl font-semibold text-center mb-2 ">how possiabel ! total expense is greter than income </p>
+
+<!-- ****Saveing Balance*** -->
 <span class="mr-6">Save:</span>
 <input class="border border-current rounded  w-1/4 mb-4 px-2 py-1" type="text" name="" id="">
 <i class="fa-solid fa-percent ml-6"></i>
 <button class="font-medium rounded px-4 mx-2 text-xl py-1 save ">Save</button>
 <h1 class="mb-4 text-center text-xl font-medium w-2/4">Saving Amount:0000</h1>
-<h1 class="mb-4 text-center text-xl font-medium w-2/4">Remaining Balance:0000</h1>
+<h1 class=" text-center text-xl font-medium w-2/4">Remaining Balance:0000</h1>
 
 </div>
-<p></p>
+
 <p></p>
             </div>
         </section>
     </main>
+    <!-- ****add js file*** -->
     <script src="js/money.js"></script>
 </body>
 </html>
